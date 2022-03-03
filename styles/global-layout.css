@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+.body{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6e6e6;
+  height: 100vh;
+}
+
+.video-wrapper{
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
+
+.video{
+  width: 100%;
+}
+
+.controls{
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  background-color: grey;
+}
+
+

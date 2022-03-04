@@ -10,18 +10,16 @@
 </head>
 <body class="body">
   <div class="video-wrapper">
-    <video class="video" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" id="video"></video>
+    <video class="video" id="video" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" ></video>
     <div class="controls">
       <div class="time-bar">
-        <div class="juice"></div>
+        <div class="juice" id="juice"></div>
       </div>
       <div class="buttons-container">
-        <button class="play-button">
-          <i class="fa-solid fa-play"></i>
-        </button>
+        <button class="play-button fa-solid fa-pause fa-play" id="play-button"></button>
       </div>
-      
     </div>
   </div>
+  <script src="./src/video-player.js"></script>
 </body>
 </html>

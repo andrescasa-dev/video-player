@@ -27,60 +27,53 @@ html{
   width: 100%;
 }
 
-.controls{
+.video__controls{
+  display: flex;
   position: absolute;
-  width: 100%;
-  height: 30px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
+  height: 30px;
   padding: 0px 15px;
   bottom: 2px;
   background-color: grey;
+  color: white;
   opacity: 0.8;
-  transform: translateY(100%);
+  /* transform: translateY(100%); */
+  transition: 300ms transform ease-in-out;
+  transition-delay: 400ms;
 }
 
-.video-wrapper:hover .controls{
+
+.video-wrapper:hover .video__controls{
   transform: translate(0px);
+  transition-duration: 150ms;
+  transition-delay: 0ms;
 }
 
+.video__controls > *{
+  
+  padding: 5px;
+  font-size: 11px;
+  cursor: pointer;
+}
 
-.time-bar{
-  width: 70%;
+.video__time-bar{
   height: 7px;
   border-radius:  5px;
+  width: 40%;
   display: flex;
   align-items: center;
   background-color: black;
 }
 
-.time-bar .juice{
+.video__time-bar .video__time-bar__juice{
   background-color: orange;
   height: 100%;
-  width: 0px;
+  width: 50%;
   border-radius: inherit;
-  
 }
 
-.buttons-container{
-  display: flex;
-  align-items: center;
-  width: 100px;
-  height: 100%;
-  order: -1;
-  
-}
 
-.buttons-container *{
-  color: white;
-}
-
-.play-button{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  background: none;
-  cursor: pointer;
-}

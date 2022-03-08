@@ -11,13 +11,25 @@
 <body class="body">
   <div class="video-wrapper">
     <video class="video" id="video" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" ></video>
-    <div class="controls">
-      <div class="time-bar">
-        <div class="juice" id="juice"></div>
+    <div class="video__controls">
+    
+      <span class="video__play fa-solid fa-pause fa-play" id="play-button"></span>
+      <span class="video__volume fa-solid fa-volume-off"></span>
+      <span class="video__previous fa-solid fa-backward"></span>
+      <span class="video__next fa-solid fa-forward"></span>
+      
+      <div class="video__time-bar">
+        <div class="video__time-bar__juice" id="juice"></div>
       </div>
-      <div class="buttons-container">
-        <button class="play-button fa-solid fa-pause fa-play" id="play-button"></button>
+      
+      <div>
+        <span>4:49</span> / <span>10:11</span></p>
       </div>
+      <span class="video__video-speed"> 1x</span>
+      <span class="video__bookmark fa-solid fa-bookmark"></span>
+      <span class="video__configurations fa-solid fa-gear"></span>
+      <span class="video__minimize fa-solid fa-chalkboard"></span>
+      <span class="video__fullscrean fa-solid fa-expand"></span>
     </div>
   </div>
   <script src="./src/video-player.js"></script>
